@@ -60,7 +60,7 @@ Startup argentina especializada en agentes de IA para empresas.
 
 ## 🎓 Formación y Certificaciones
 
-- **Ingeniería en Sistemas Informáticos** – UAI (2022-2026)  
+- **Ingeniería en Sistemas Informáticos** – UAI En curso (2022-2026)  
 - **Analista en Sistemas Informáticos** – UAI (Graduado 2024)  
 - **Técnico en equipos e instalaciones electromecánicas** – EETP 292  
 - **Formación en redes Huawei (HCIA Datacom)** – Huawei Talents 2024  
