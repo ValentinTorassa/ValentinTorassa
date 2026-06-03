@@ -36,18 +36,6 @@ Core technology areas:
 - **Security architecture:** secure product integration, compliance automation, access control, risk management and AI-driven product security
 - **Networking:** firewalls, VPNs, MikroTik, WireGuard, ZeroTier, routing, VLANs and network segmentation
 
-**Cloud, security and compliance**
-
-![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazon-aws&logoColor=white)
-![AWS IAM](https://img.shields.io/badge/AWS%20IAM-FF9900?logo=amazon-aws&logoColor=white)
-![EC2](https://img.shields.io/badge/EC2-FF9900?logo=amazon-ec2&logoColor=white)
-![VPC](https://img.shields.io/badge/VPC-FF9900?logo=amazon-aws&logoColor=white)
-![CloudTrail](https://img.shields.io/badge/CloudTrail-FF9900?logo=amazon-aws&logoColor=white)
-![CloudWatch](https://img.shields.io/badge/CloudWatch-FF9900?logo=amazoncloudwatch&logoColor=white)
-![AWS Config](https://img.shields.io/badge/AWS%20Config-FF9900?logo=amazon-aws&logoColor=white)
-![SOC 2](https://img.shields.io/badge/SOC%202-1F2937?logo=trustpilot&logoColor=white)
-![ISO 27001](https://img.shields.io/badge/ISO%2027001-1F2937?logo=securityscorecard&logoColor=white)
-
 **Backend and data**
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white)
@@ -75,6 +63,18 @@ Core technology areas:
 ![ZeroTier](https://img.shields.io/badge/ZeroTier-FFB441?logo=zerotier&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
+
+**Cloud, security and compliance**
+
+![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazon-aws&logoColor=white)
+![AWS IAM](https://img.shields.io/badge/AWS%20IAM-FF9900?logo=amazon-aws&logoColor=white)
+![EC2](https://img.shields.io/badge/EC2-FF9900?logo=amazon-ec2&logoColor=white)
+![VPC](https://img.shields.io/badge/VPC-FF9900?logo=amazon-aws&logoColor=white)
+![CloudTrail](https://img.shields.io/badge/CloudTrail-FF9900?logo=amazon-aws&logoColor=white)
+![CloudWatch](https://img.shields.io/badge/CloudWatch-FF9900?logo=amazoncloudwatch&logoColor=white)
+![AWS Config](https://img.shields.io/badge/AWS%20Config-FF9900?logo=amazon-aws&logoColor=white)
+![SOC 2](https://img.shields.io/badge/SOC%202-1F2937?logo=trustpilot&logoColor=white)
+![ISO 27001](https://img.shields.io/badge/ISO%2027001-1F2937?logo=securityscorecard&logoColor=white)
 
 ---
 
