@@ -12,7 +12,7 @@
 
 ---
 
-## 🧠 About Me
+## 🐧 About Me
 
 I am a **Cybersecurity Engineer and Backend Engineer with a strong security architecture focus** from Rosario, Argentina.
 
@@ -36,18 +36,45 @@ Core technology areas:
 - **Security architecture:** secure product integration, compliance automation, access control, risk management and AI-driven product security
 - **Networking:** firewalls, VPNs, MikroTik, WireGuard, ZeroTier, routing, VLANs and network segmentation
 
+**Cloud, security and compliance**
+
 ![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazon-aws&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-000000?logo=linux&logoColor=white)
+![AWS IAM](https://img.shields.io/badge/AWS%20IAM-FF9900?logo=amazon-aws&logoColor=white)
+![EC2](https://img.shields.io/badge/EC2-FF9900?logo=amazon-ec2&logoColor=white)
+![VPC](https://img.shields.io/badge/VPC-FF9900?logo=amazon-aws&logoColor=white)
+![CloudTrail](https://img.shields.io/badge/CloudTrail-FF9900?logo=amazon-aws&logoColor=white)
+![CloudWatch](https://img.shields.io/badge/CloudWatch-FF9900?logo=amazoncloudwatch&logoColor=white)
+![AWS Config](https://img.shields.io/badge/AWS%20Config-FF9900?logo=amazon-aws&logoColor=white)
+![SOC 2](https://img.shields.io/badge/SOC%202-1F2937?logo=trustpilot&logoColor=white)
+![ISO 27001](https://img.shields.io/badge/ISO%2027001-1F2937?logo=securityscorecard&logoColor=white)
+
+**Backend and data**
+
 ![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![CSharp](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?logo=dotnet&logoColor=white)
+![Entity Framework](https://img.shields.io/badge/Entity%20Framework-512BD4?logo=dotnet&logoColor=white)
+![REST APIs](https://img.shields.io/badge/REST%20APIs-02569B?logo=fastapi&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoft-sql-server&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-![WireGuard](https://img.shields.io/badge/WireGuard-88171A?logo=wireguard&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+
+**Linux, infrastructure and networking**
+
+![Linux](https://img.shields.io/badge/Linux-000000?logo=linux&logoColor=white)
+![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white)
+![systemd](https://img.shields.io/badge/systemd-000000?logo=linux&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![MikroTik](https://img.shields.io/badge/MikroTik-293239?logo=mikrotik&logoColor=white)
+![WireGuard](https://img.shields.io/badge/WireGuard-88171A?logo=wireguard&logoColor=white)
+![ZeroTier](https://img.shields.io/badge/ZeroTier-FFB441?logo=zerotier&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
 
 ---
 
