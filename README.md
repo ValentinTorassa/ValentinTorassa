@@ -1,73 +1,276 @@
 # Valentín Torassa Colombero
 
-**Cybersecurity & Compliance Analyst** | **SysAdmin & Network Specialist**  
-📍 Rosario, Argentina | 🌐 [GitHub](https://github.com/ValeTorassa) | 👤 [LinkedIn](https://linkedin.com/in/valetorassa) | ✉️ valentintorassacolombero@gmail.com
+**Cybersecurity Engineer & Backend Engineer at Teramot**  
+**Cybersecurity Content Creator | Linux & Cloud Security Enthusiast**
 
-## 🐧 Sobre mí
+📍 Rosario, Santa Fe, Argentina  
+🌐 [Website](https://valentorassa.com/)  
+💻 [GitHub](https://github.com/ValeTorassa)  
+👤 [LinkedIn](https://linkedin.com/in/valetorassa)  
+🎥 [YouTube - VT Security](https://www.youtube.com/@vtcibersecurity)  
+✉️ valentintorassacolombero@gmail.com
 
-Soy **Analista en Ciberseguridad** con sólida experiencia en sistemas operativos, redes y servidores Linux. Actualmente formo parte del equipo de **[Teramot](https://teramot.com)**, una startup argentina enfocada en inteligencia artificial, donde lidero la implementación del área de seguridad informática y cumplimiento normativo.
+---
 
-Me especializo en la protección de entornos sensibles (cloud y on-premise), aplicando políticas de **ISO/IEC 27001** y **SOC 2**, automatización de defensas, y monitoreo avanzado de infraestructura.
+## 🧠 About Me
 
-## 💡 Habilidades principales
+I am a **Cybersecurity Engineer, Backend Engineer and Cybersecurity Content Creator** from Rosario, Argentina.
 
-### 🔐 Ciberseguridad y cumplimiento
-- Gestión de cumplimiento ISO 27001 / SOC 2
-- Auditorías internas, controles técnicos y normativos
-- Aislamiento de endpoints, monitoreo con SIEM (Sophos, Wazuh)
-- Automatización de defensas y alertas
+Currently, I work at **Teramot**, an Argentine AI startup, where I focus on cybersecurity, backend engineering, cloud security and compliance. My work involves integrating **SOC 2 controls**, **ISO/IEC 27001 practices**, AWS security policies and secure software development processes into the company's infrastructure and product ecosystem.
 
-### ☁️ AWS & Cloud Security
-- IAM, VPCs, EC2, CloudTrail, AWS Config
-- Segmentación y monitoreo en la nube
-- Actualmente estudiando para **certificaciones oficiales de AWS**
+My role evolved from cybersecurity and compliance analysis into a hybrid engineering position that combines **cloud security engineering**, **backend development**, **security architecture**, **compliance automation** and **secure product integration**.
 
-### 🌐 Redes y servidores
-- **Nivel asociado Huawei en redes** (capacitación completa)
-- Routing, switching, VLANs, VPNs, CGNAT, NAT traversal
-- Configuración de firewalls, routers, ZeroTier, MikroTik, WireGuard
-- Administración de servidores Linux (Debian, Ubuntu, CentOS)
-- Hardening, monitoreo, automatización de tareas
+I am also the creator of **VT Security**, a technical YouTube channel where I share practical and honest content about cybersecurity, Linux, networking, cloud computing, backend engineering and technology careers.
 
-### 🔧 Desarrollo y automatización
-- .NET / C# (ASP.NET Core, Entity Framework)
-- Python (scripts de seguridad y automatización)
-- PostgreSQL / SQL Server
-- Bash, cronjobs, systemd
-- React + TypeScript (proyectos propios y portales administrativos)
+VT Security started as a personal space to document what I was learning. Through the channel, I create videos, guides, technical explanations and reflections aimed at helping people understand technology in a real, practical and accessible way.
 
-## 🏷️ Tecnologías que uso
+---
 
-![Linux](https://img.shields.io/badge/-Linux-black?logo=linux&logoColor=white)
-![AWS](https://img.shields.io/badge/-AWS-orange?logo=amazon-aws&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
-![CSharp](https://img.shields.io/badge/-CSharp-239120?logo=c-sharp&logoColor=white)
-![.NET](https://img.shields.io/badge/-.NET-512BD4?logo=dotnet&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white)
-![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white)
-![WireGuard](https://img.shields.io/badge/-WireGuard-88171A?logo=wireguard&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?logo=Go&logoColor=white)
+## 🔐 Cybersecurity & Compliance
 
-## 🧭 Experiencia actual
+- SOC 2 control implementation and evidence management
+- ISO/IEC 27001 security practices
+- Cloud security governance
+- AWS security monitoring and hardening
+- Security policies and internal control automation
+- Audit preparation and compliance workflows
+- Risk management and security documentation
+- Endpoint protection and incident response
+- Vulnerability analysis and remediation
+- Security architecture for AI-driven products
+- Protection of sensitive corporate data used by AI agents
 
-### **Cybersecurity & Compliance Analyst – Teramot**  
-*jun. 2025 - Actualidad · Rosario (Híbrido)*  
-Startup argentina especializada en agentes de IA para empresas.  
-- Responsable de la implementación de seguridad cloud (AWS), cumplimiento ISO/SOC y protección de datos sensibles.  
-- Automatización de controles y alertas de seguridad.  
-- Integración segura de endpoints, bases de datos y APIs para operaciones críticas.
+---
 
-## 🎓 Formación y Certificaciones
+## ☁️ Cloud Security & AWS
 
-- **Ingeniería en Sistemas Informáticos** – UAI En curso (2022-2026)  
-- **Analista en Sistemas Informáticos** – UAI (Graduado 2024)  
-- **Técnico en equipos e instalaciones electromecánicas** – EETP 292  
-- **Formación en redes Huawei (HCIA Datacom)** – Huawei Talents 2024  
-- **Formación avanzada en AWS** – En curso (proyección certificaciones en 2025)  
-- **Inglés profesional** – Asociación de Cultura Inglesa (Nivel Avanzado)
+- AWS IAM
+- EC2
+- VPC
+- CloudTrail
+- CloudWatch
+- AWS Config
+- Security monitoring
+- Cloud hardening
+- Infrastructure security
+- Cloud compliance
+- Security automation
 
-📫 **¿Charlamos?**  
-Estoy siempre abierto a colaborar en proyectos open-source, conferencias técnicas, y compartir ideas sobre redes, Linux y seguridad.
+**Certification:**  
+- AWS Certified Cloud Practitioner
 
+---
+
+## 🧩 Backend Engineering
+
+- Go
+- C#
+- ASP.NET Core
+- Entity Framework
+- REST APIs
+- SQL Server
+- PostgreSQL
+- Python scripting
+- Secure API design
+- Backend architecture
+- Automation tools
+- Internal platforms
+
+---
+
+## 🐧 Linux, Infrastructure & Networking
+
+I have strong experience working with Linux servers, operating systems, networking and infrastructure security.
+
+Main areas:
+
+- Linux server administration
+- Debian, Ubuntu, CentOS and Rocky Linux
+- System hardening
+- Bash scripting
+- Systemd services
+- Docker
+- Virtualization
+- Firewalls
+- VPNs
+- MikroTik
+- WireGuard
+- ZeroTier
+- Routing and switching
+- VLANs
+- NAT and CGNAT traversal
+- Network segmentation
+- Monitoring and troubleshooting
+
+---
+
+## 🏢 Professional Experience
+
+### Cybersecurity Engineer & Software Engineer  
+**Teramot**  
+*Nov. 2025 - Present · Rosario, Argentina*
+
+At Teramot, an AI startup, I work on the intersection of cybersecurity, backend engineering, cloud security and compliance, integrating SOC 2 controls into both infrastructure and product development.
+
+Main responsibilities:
+
+- Lead cybersecurity and compliance technical initiatives
+- Implement SOC 2 controls across cloud infrastructure and product workflows
+- Design secure integrations for AI agents
+- Build backend platforms and internal tools
+- Automate compliance and security workflows
+- Manage cloud security policies
+- Participate in audits and technical product decisions
+- Develop secure backend systems in Go
+
+Main project:
+
+- **Aleph**: backend platform written in Go that enables secure and scalable access to Teramot's AI capabilities and sensitive business data.
+
+---
+
+### Cybersecurity & Compliance Analyst  
+**Teramot**  
+*Jun. 2025 - Nov. 2025 · Rosario, Argentina*
+
+- Structured cybersecurity processes for an AI startup
+- Worked on ISO 27001 and SOC 2 readiness
+- Protected AWS cloud servers, databases, critical files and exposed API endpoints
+- Automated compliance and monitoring workflows
+- Supported internal audits and security decisions
+
+---
+
+### Cybersecurity Analyst  
+**Consulting IT**  
+*Aug. 2024 - Jul. 2025 · Remote*
+
+- Developed cybersecurity strategies for outsourcing clients
+- Worked with Sophos, Avast, firewalls and SOC tools
+- Implemented security controls across networks and cloud environments
+- Supported endpoint protection, incident response and monitoring
+- Participated in secure infrastructure and cloud configuration projects
+
+---
+
+### Teaching Assistant  
+**Universidad Abierta Interamericana**  
+*Sep. 2024 - Jun. 2025 · Rosario, Argentina*
+
+Teaching assistant in computer architecture and systems-related subjects.
+
+---
+
+## 🎥 VT Security
+
+**VT Security** is my main personal project and technical education platform.
+
+Through the channel, I create content about:
+
+- Cybersecurity
+- Linux
+- Networking
+- Cloud computing
+- AWS
+- Backend engineering
+- Software architecture
+- Ethical hacking
+- Operating systems
+- Career development in technology
+
+The goal of VT Security is to explain complex technical topics without unnecessary hype, showing the real learning process behind cybersecurity, infrastructure and software engineering.
+
+I focus on practical content, honest experiences and technical depth, especially for people who are starting in IT, cybersecurity or software development and want to understand how things work beyond tutorials and theory.
+
+---
+
+## 🎓 Education
+
+### Systems Engineering  
+**Universidad Abierta Interamericana**  
+*2022 - 2026*
+
+### Systems Analyst  
+**Universidad Abierta Interamericana**  
+*Graduated 2024 · GPA: 9.25*
+
+---
+
+## 📜 Certifications
+
+- **CompTIA Security+ ce**
+- **LFCA: Linux Foundation Certified IT Associate**
+- **AWS Certified Cloud Practitioner**
+- **Sophos Firewall Certified Engineer**
+- **Huawei Data Communication and Network Technology**
+- **HCIA Datacom Preparation**
+- **TryHackMe Cyber Security 101**
+- **Introduction to Linux**
+- **Introduction to Networking**
+
+---
+
+## 🏆 Awards & Research
+
+- Distinguished Speaker in Information Security - **CACIC 2024**
+- Best Presentation - **Argentine Symposium on Cybersecurity and Cyberdefense, JAIIO 2024**
+- Author of “Analysis and Development of Reverse Shell Tools for Penetration Testing”
+- Author of “Botnets: State of the Art and Taxonomy of a Stealthy Threat”
+- Author of “Dockerization of SCADA Servers: Industrial Cybersecurity”
+- Research participant in cybersecurity, infrastructure and industrial systems security
+
+---
+
+## 🛠️ Technologies
+
+![Linux](https://img.shields.io/badge/Linux-000000?logo=linux&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazon-aws&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![CSharp](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoft-sql-server&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![WireGuard](https://img.shields.io/badge/WireGuard-88171A?logo=wireguard&logoColor=white)
+
+---
+
+## 📌 Featured Projects
+
+### Aleph  
+Backend platform developed in Go for secure and scalable interaction with Teramot's AI capabilities.
+
+### VT Security  
+Educational cybersecurity and technology content platform focused on practical learning, Linux, cloud, networking and cybersecurity careers.
+
+---
+
+## 📚 Currently Learning
+
+- Advanced AWS Security
+- DevSecOps
+- Terraform
+- Cloud Security Engineering
+- Detection Engineering
+- AI Security
+- CISSP-oriented cybersecurity concepts
+
+---
+
+## 🤝 Let's Connect
+
+I am open to collaborating on:
+
+- Cybersecurity research
+- Open-source projects
+- Technical talks
+- Cloud security projects
+- Linux and infrastructure content
+- Software architecture
+- Educational initiatives
+- YouTube collaborations and technical content
+
+Feel free to connect with me through LinkedIn, GitHub or YouTub
