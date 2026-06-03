@@ -5,8 +5,8 @@
 
 📍 Rosario, Santa Fe, Argentina  
 🌐 [Website](https://valentorassa.com/)  
-💻 [GitHub](https://github.com/ValeTorassa)  
 👤 [LinkedIn](https://linkedin.com/in/valetorassa)  
+🐦 [X](https://x.com/ValenSecurity)  
 🎥 [YouTube - VT Security](https://www.youtube.com/@vtcibersecurity)  
 ✉️ valentintorassacolombero@gmail.com
 
