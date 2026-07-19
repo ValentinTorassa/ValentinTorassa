@@ -134,5 +134,5 @@ These are the technologies I use across secure backend systems, cloud infrastruc
 </p>
 
 <p align="center">
-  Rosario, Argentina · UTC−3 · Portfolio available in English and Spanish
+  Rosario, Argentina · UTC−3
 </p>
