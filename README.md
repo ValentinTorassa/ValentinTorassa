@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/profile-header.jpg" alt="Valentín Torassa Colombero — Cybersecurity, backend, cloud security, Linux, and open source" width="100%" />
-</p>
-
 <h1 align="center">Valentín Torassa Colombero</h1>
 
 <p align="center">
@@ -16,21 +12,7 @@ I am a Cybersecurity and Backend Engineer based in Rosario, Argentina. I build a
 
 Alongside my professional work, I create open-source software and practical Spanish-language education through [VT Security](https://www.youtube.com/@vtcibersecurity). I care about work that leaves reviewable evidence: running code, labs, documentation, tests, research, and talks.
 
-## Selected open work
-
-- **[Open Security Labs](https://github.com/ValentinTorassa/Open-Security-Labs)** — My flagship open-source education project: practical Spanish-language labs covering Linux, networking, backend engineering, cloud, DevSecOps, AI agents, and cybersecurity. **[Explore the platform →](https://securitylabs.valentorassa.com/)**
-- **[VT-SecretShare](https://github.com/ValentinTorassa/VT-SecretShare)** — Self-hosted, one-time secret sharing with browser-side AES-256-GCM encryption, a Go API, and atomic deletion through Redis GETDEL.
-- **[VT-Security-Fixes](https://github.com/ValentinTorassa/VT-Security-Fixes)** — DEP-3-formatted security patches for open-source packages that miss standard distribution updates, currently focused on Ubuntu universe CVEs.
-- **[VT-Terminal-Project](https://github.com/ValentinTorassa/VT-Terminal-Project)** — A reproducible macOS and Linux terminal environment with Zsh, Ghostty, modern CLI tools, searchable cheatsheets, and AI-assisted workflows.
-- **[VT-IDE-Project](https://github.com/ValentinTorassa/VT-IDE-Project)** — An AI-native Zed setup with MCP integrations, inline assistance, and structured Git review, conflict-resolution, and diff workflows.
-
-## Open-source contribution
-
-My merged Podman contribution, **[Add <code>--retry</code> support to <code>manifest push</code> — PR #28637](https://github.com/podman-container-tools/podman/pull/28637)**, added <code>--retry</code> and <code>--retry-delay</code> across the CLI, local and remote clients, REST API, manpages, Swagger documentation, and end-to-end tests.
-
-It is a small feature with a production lesson behind it: reliable infrastructure requires explicit behavior for temporary network and registry failures.
-
-## Current work
+## Current role & focus
 
 ### Teramot — Cybersecurity Engineer & Software Architect
 
@@ -41,9 +23,43 @@ It is a small feature with a production lesson behind it: reliable infrastructur
 - Translate SOC 2 and ISO/IEC 27001 requirements into verifiable technical implementations and evidence.
 - Focus on OAuth/OIDC, permissions, sensitive-data boundaries, observability, and operational reliability.
 
+**Current focus:** AI-agent authorization, MCP security, detection engineering, cloud identity, and low-level Linux fundamentals.
+
 Previously, I worked as a Cybersecurity & Compliance Analyst at Teramot, a Cybersecurity Analyst at Consulting IT, and a Teaching Assistant for Computer Architecture II at Universidad Abierta Interamericana.
 
-## Technology wall
+## Projects & open source
+
+- **[Open Security Labs](https://github.com/ValentinTorassa/Open-Security-Labs)** — My flagship open-source education project: practical Spanish-language labs covering Linux, networking, backend engineering, cloud, DevSecOps, AI agents, and cybersecurity. **[Explore the platform →](https://securitylabs.valentorassa.com/)**
+- **[VT-SecretShare](https://github.com/ValentinTorassa/VT-SecretShare)** — Self-hosted, one-time secret sharing with browser-side AES-256-GCM encryption, a Go API, and atomic deletion through Redis GETDEL.
+- **[VT-Security-Fixes](https://github.com/ValentinTorassa/VT-Security-Fixes)** — DEP-3-formatted security patches for open-source packages that miss standard distribution updates, currently focused on Ubuntu universe CVEs.
+- **[VT-Terminal-Project](https://github.com/ValentinTorassa/VT-Terminal-Project)** — A reproducible macOS and Linux terminal environment with Zsh, Ghostty, modern CLI tools, searchable cheatsheets, and AI-assisted workflows.
+- **[VT-IDE-Project](https://github.com/ValentinTorassa/VT-IDE-Project)** — An AI-native Zed setup with MCP integrations, inline assistance, and structured Git review, conflict-resolution, and diff workflows.
+
+### Contribution highlight
+
+My merged Podman contribution, **[Add <code>--retry</code> support to <code>manifest push</code> — PR #28637](https://github.com/podman-container-tools/podman/pull/28637)**, added <code>--retry</code> and <code>--retry-delay</code> across the CLI, local and remote clients, REST API, manpages, Swagger documentation, and end-to-end tests.
+
+It is a small feature with a production lesson behind it: reliable infrastructure requires explicit behavior for temporary network and registry failures.
+
+## Education & certifications
+
+- **Information Systems Engineering**, Universidad Abierta Interamericana — final year, expected Dec. 2026
+- **Information Systems Analyst**, Universidad Abierta Interamericana — completed Dec. 2024, GPA 9.25/10
+- **CompTIA Security+ (SY0-701)** — issued Feb. 2026, valid through Feb. 2029
+- **AWS Certified Cloud Practitioner (CLF-C02)** — issued Jul. 2025, valid through Jul. 2028
+- **Linux Foundation Certified IT Associate (LFCA)** — issued Apr. 2026, valid through Apr. 2028
+
+## Teaching, speaking & research
+
+[VT Security](https://www.youtube.com/@vtcibersecurity) is my Spanish-language education and community platform for practical cybersecurity, Linux, networking, software engineering, and systems fundamentals. Open Security Labs is its flagship public software project.
+
+- **Upcoming — [DebConf26](https://debconf26.debconf.org/talks/75-abstraction-leaks-why-understanding-linux-internals-still-matters/), July 24, 2026 at 10:00:** *Abstraction Leaks: Why Understanding Linux Internals Still Matters*
+- **[Vincular Inteligente 2026](https://vincular-inteligente-2026.vercel.app/), May 22, 2026:** *Seguridad con IA: monitoreo inteligente y respuesta temprana*
+- **CyberSecTuc Meetup #3:** *La realidad de un Ingeniero en Ciberseguridad*
+- **CACIC 2024:** *Expositor Distinguido en Seguridad Informática* for [reverse-shell research](https://sedici.unlp.edu.ar/handle/10915/176994)
+- **SACS / 53 JAIIO 2024:** *Mejor Exposición* for [botnet taxonomy research](https://revistas.unlp.edu.ar/JAIIO/article/view/17896)
+
+## Technical toolkit
 
 The tools below represent both my current operational stack and the broader engineering background I draw from.
 
@@ -103,28 +119,6 @@ The tools below represent both my current operational stack and the broader engi
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </p>
-
-**Current focus:** AI-agent authorization, MCP security, detection engineering, cloud identity, and low-level Linux fundamentals.
-
-## Speaking and research
-
-- **Upcoming — [DebConf26](https://debconf26.debconf.org/talks/75-abstraction-leaks-why-understanding-linux-internals-still-matters/), July 24, 2026 at 10:00:** *Abstraction Leaks: Why Understanding Linux Internals Still Matters*
-- **[Vincular Inteligente 2026](https://vincular-inteligente-2026.vercel.app/), May 22, 2026:** *Seguridad con IA: monitoreo inteligente y respuesta temprana*
-- **CyberSecTuc Meetup #3:** *La realidad de un Ingeniero en Ciberseguridad*
-- **CACIC 2024:** *Expositor Distinguido en Seguridad Informática* for [reverse-shell research](https://sedici.unlp.edu.ar/handle/10915/176994)
-- **SACS / 53 JAIIO 2024:** *Mejor Exposición* for [botnet taxonomy research](https://revistas.unlp.edu.ar/JAIIO/article/view/17896)
-
-## Education and certifications
-
-- **Information Systems Engineering**, Universidad Abierta Interamericana — final year, expected Dec. 2026
-- **Information Systems Analyst**, Universidad Abierta Interamericana — completed Dec. 2024, GPA 9.25/10
-- **CompTIA Security+ (SY0-701)** — issued Feb. 2026, valid through Feb. 2029
-- **AWS Certified Cloud Practitioner (CLF-C02)** — issued Jul. 2025, valid through Jul. 2028
-- **Linux Foundation Certified IT Associate (LFCA)** — issued Apr. 2026, valid through Apr. 2028
-
-## VT Security
-
-[VT Security](https://www.youtube.com/@vtcibersecurity) is my Spanish-language education and community platform for practical cybersecurity, Linux, networking, software engineering, and systems fundamentals. Open Security Labs is its flagship public software project.
 
 <h2 align="center">Find me online</h2>
 
