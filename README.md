@@ -41,27 +41,9 @@ My merged Podman contribution, **[Add <code>--retry</code> support to <code>mani
 
 It is a small feature with a production lesson behind it: reliable infrastructure requires explicit behavior for temporary network and registry failures.
 
-## Education & certifications
-
-- **Information Systems Engineering**, Universidad Abierta Interamericana — final year, expected Dec. 2026
-- **Information Systems Analyst**, Universidad Abierta Interamericana — completed Dec. 2024, GPA 9.25/10
-- **CompTIA Security+ (SY0-701)** — issued Feb. 2026, valid through Feb. 2029
-- **AWS Certified Cloud Practitioner (CLF-C02)** — issued Jul. 2025, valid through Jul. 2028
-- **Linux Foundation Certified IT Associate (LFCA)** — issued Apr. 2026, valid through Apr. 2028
-
-## Teaching, speaking & research
-
-[VT Security](https://www.youtube.com/@vtcibersecurity) is my Spanish-language education and community platform for practical cybersecurity, Linux, networking, software engineering, and systems fundamentals. Open Security Labs is its flagship public software project.
-
-- **Upcoming — [DebConf26](https://debconf26.debconf.org/talks/75-abstraction-leaks-why-understanding-linux-internals-still-matters/), July 24, 2026 at 10:00:** *Abstraction Leaks: Why Understanding Linux Internals Still Matters*
-- **[Vincular Inteligente 2026](https://vincular-inteligente-2026.vercel.app/), May 22, 2026:** *Seguridad con IA: monitoreo inteligente y respuesta temprana*
-- **CyberSecTuc Meetup #3:** *La realidad de un Ingeniero en Ciberseguridad*
-- **CACIC 2024:** *Expositor Distinguido en Seguridad Informática* for [reverse-shell research](https://sedici.unlp.edu.ar/handle/10915/176994)
-- **SACS / 53 JAIIO 2024:** *Mejor Exposición* for [botnet taxonomy research](https://revistas.unlp.edu.ar/JAIIO/article/view/17896)
-
 ## Technical toolkit
 
-The tools below represent both my current operational stack and the broader engineering background I draw from.
+These are the technologies I use across secure backend systems, cloud infrastructure, identity, observability, and systems engineering.
 
 **Backend and data**
 
@@ -120,14 +102,32 @@ The tools below represent both my current operational stack and the broader engi
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </p>
 
+## Education & certifications
+
+- **Information Systems Engineering**, Universidad Abierta Interamericana — final year, expected Dec. 2026
+- **Information Systems Analyst**, Universidad Abierta Interamericana — completed Dec. 2024, GPA 9.25/10
+- **CompTIA Security+ (SY0-701)** — issued Feb. 2026, valid through Feb. 2029
+- **AWS Certified Cloud Practitioner (CLF-C02)** — issued Jul. 2025, valid through Jul. 2028
+- **Linux Foundation Certified IT Associate (LFCA)** — issued Apr. 2026, valid through Apr. 2028
+
+## Teaching, speaking & research
+
+[VT Security](https://www.youtube.com/@vtcibersecurity) is my Spanish-language education and community platform for practical cybersecurity, Linux, networking, software engineering, and systems fundamentals. Open Security Labs is its flagship public software project.
+
+- **Upcoming — [DebConf26](https://debconf26.debconf.org/talks/75-abstraction-leaks-why-understanding-linux-internals-still-matters/), July 24, 2026 at 10:00:** *Abstraction Leaks: Why Understanding Linux Internals Still Matters*
+- **[Vincular Inteligente 2026](https://vincular-inteligente-2026.vercel.app/), May 22, 2026:** *Seguridad con IA: monitoreo inteligente y respuesta temprana*
+- **CyberSecTuc Meetup #3:** *La realidad de un Ingeniero en Ciberseguridad*
+- **CACIC 2024:** *Expositor Distinguido en Seguridad Informática* for [reverse-shell research](https://sedici.unlp.edu.ar/handle/10915/176994)
+- **SACS / 53 JAIIO 2024:** *Mejor Exposición* for [botnet taxonomy research](https://revistas.unlp.edu.ar/JAIIO/article/view/17896)
+
 <h2 align="center">Find me online</h2>
 
 <p align="center">
   <a href="https://valentorassa.com/"><img src="https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=firefoxbrowser&logoColor=white" alt="Portfolio" /></a>
   <a href="https://github.com/ValentinTorassa"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://www.linkedin.com/in/valetorassa/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://www.linkedin.com/in/valetorassa/"><img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin-white&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://www.youtube.com/@vtcibersecurity"><img src="https://img.shields.io/badge/YouTube_Channel-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube channel" /></a>
-  <a href="https://www.tiktok.com/@vtsecurity"><img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok" /></a>
+  <a href="https://www.tiktok.com/@vtsecurity"><img src="https://img.shields.io/badge/TikTok-25F4EE?style=for-the-badge&logo=tiktok&logoColor=black" alt="TikTok" /></a>
   <a href="https://www.instagram.com/vtsecurity/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
   <a href="https://x.com/ValenSecurity"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
   <a href="mailto:valentin.torassa.colombero@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
