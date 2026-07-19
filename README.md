@@ -4,10 +4,6 @@
   <strong>Cybersecurity & Backend Engineer · Cloud Security · Go · Linux · Open Source</strong>
 </p>
 
-<p align="center">
-  Building secure systems for AI agents and teaching practical technology through VT Security.
-</p>
-
 I am a Cybersecurity and Backend Engineer based in Rosario, Argentina. I build and secure cloud-backed systems, with a particular interest in identity, permissions, observability, and the Linux and networking layers underneath modern abstractions.
 
 Alongside my professional work, I create open-source software and practical Spanish-language education through [VT Security](https://www.youtube.com/@vtcibersecurity). I care about work that leaves reviewable evidence: running code, labs, documentation, tests, research, and talks.
