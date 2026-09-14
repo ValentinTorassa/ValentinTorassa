@@ -110,7 +110,7 @@ These are the technologies I use across secure backend systems, cloud infrastruc
 
 [VT Security](https://www.youtube.com/@vtcibersecurity) is my Spanish-language education and community platform for practical cybersecurity, Linux, networking, software engineering, and systems fundamentals. Open Security Labs is its flagship public software project.
 
-- **Upcoming — [DebConf26](https://debconf26.debconf.org/talks/75-abstraction-leaks-why-understanding-linux-internals-still-matters/), July 24, 2026 at 10:00:** *Abstraction Leaks: Why Understanding Linux Internals Still Matters*
+- **[DebConf26](https://debconf26.debconf.org/talks/75-abstraction-leaks-why-understanding-linux-internals-still-matters/), July 24, 2026 at 10:00:** *Abstraction Leaks: Why Understanding Linux Internals Still Matters*
 - **[Vincular Inteligente 2026](https://vincular-inteligente-2026.vercel.app/), May 22, 2026:** *Seguridad con IA: monitoreo inteligente y respuesta temprana*
 - **CyberSecTuc Meetup #3:** *La realidad de un Ingeniero en Ciberseguridad*
 - **CACIC 2024:** *Expositor Distinguido en Seguridad Informática* for [reverse-shell research](https://sedici.unlp.edu.ar/handle/10915/176994)
