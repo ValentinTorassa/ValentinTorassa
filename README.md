@@ -6,7 +6,9 @@
 
 I am a Cybersecurity and Backend Engineer based in Rosario, Argentina. I build and secure cloud-backed systems, with a particular interest in identity, permissions, observability, and the Linux and networking layers underneath modern abstractions.
 
-Alongside my professional work, I create open-source software and practical Spanish-language education through [VT Security](https://www.youtube.com/@vtcibersecurity). I care about work that leaves reviewable evidence: running code, labs, documentation, tests, research, and talks.
+Alongside my professional work, I create open-source software and practical Spanish-language education through [VT Security](https://www.youtube.com/@vtcibersecurity).
+
+I write long-form technical notes at **[vtsecurity.com.ar](https://vtsecurity.com.ar)** — Linux, Git and security, with the diagrams and the exact commands I actually use. I care about work that leaves reviewable evidence: running code, labs, documentation, tests, research, and talks.
 
 ## Current role & focus
 
