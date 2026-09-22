@@ -124,6 +124,8 @@ These are the technologies I use across secure backend systems, cloud infrastruc
 
 [VT Security](https://www.youtube.com/@vtcibersecurity) is my Spanish-language education and community platform for practical cybersecurity, Linux, networking, software engineering, and systems fundamentals. Open Security Labs is its flagship public software project.
 
+I am an **AWS Community Builder**, in my first year in the programme.
+
 ### Upcoming
 
 - **Joven Argentina (FNGA), Rosario, Sep. 28, 2026:** cybersecurity talk and exchange for a programme of young leaders
