@@ -148,6 +148,7 @@ These are the technologies I use across secure backend systems, cloud infrastruc
 
 <p align="center">
   <a href="https://valentorassa.com/"><img src="https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=firefoxbrowser&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://vtsecurity.com.ar"><img src="https://img.shields.io/badge/Blog-0B1120?style=for-the-badge&logo=rss&logoColor=FF6600" alt="Blog" /></a>
   <a href="https://github.com/ValentinTorassa"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
   <a href="https://www.linkedin.com/in/valetorassa/"><img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin-white&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://www.youtube.com/@vtcibersecurity"><img src="https://img.shields.io/badge/YouTube_Channel-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube channel" /></a>
