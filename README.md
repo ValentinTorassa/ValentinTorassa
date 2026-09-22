@@ -155,6 +155,9 @@ These are the technologies I use across secure backend systems, cloud infrastruc
   <a href="https://www.tiktok.com/@vtsecurity"><img src="https://img.shields.io/badge/TikTok-25F4EE?style=for-the-badge&logo=tiktok&logoColor=black" alt="TikTok" /></a>
   <a href="https://www.instagram.com/vtsecurity/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
   <a href="https://x.com/ValenSecurity"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="https://bsky.app/profile/vtsecurity.bsky.social"><img src="https://img.shields.io/badge/Bluesky-0285FF?style=for-the-badge&logo=bluesky&logoColor=white" alt="Bluesky" /></a>
+  <a href="https://www.threads.com/@vt_security_"><img src="https://img.shields.io/badge/Threads-000000?style=for-the-badge&logo=threads&logoColor=white" alt="Threads" /></a>
+  <a href="https://discord.com/invite/z6cr5JF6bJ"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="mailto:valentin.torassa.colombero@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
 
