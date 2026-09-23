@@ -1,0 +1,139 @@
+# Weekly sync of the README sections that come from the Brain.
+#
+# Needs two repository secrets: BRAIN_READ_TOKEN, a fine-grained personal access
+# token with read-only Contents access to the Brain repository and nothing else,
+# and BRAIN_REPO, the Brain's owner/name. The name is a secret on purpose: this
+# repo and its logs are public, the Brain is not. Without both, the run skips
+# with a notice. It never pushes to main: when the
+# README changes, it opens (or refreshes) a pull request from the brain-sync
+# branch. Only the whitelisted Brain files are checked out, and the logs show
+# section names, file paths and the source commit, never Brain text.
+name: Sync from the Brain
+
+on:
+  schedule:
+    - cron: "23 10 * * 1" # Mondays 10:23 UTC, 07:23 in Rosario
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: brain-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      BASE_BRANCH: main
+      SYNC_BRANCH: brain-sync
+      BRAIN_DIR: .brain-checkout
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Check for the read-only token
+        id: gate
+        env:
+          HAS_TOKEN: ${{ secrets.BRAIN_READ_TOKEN != '' && secrets.BRAIN_REPO != '' }}
+        run: |
+          if [ "$HAS_TOKEN" = "true" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice title=Brain sync skipped::The BRAIN_READ_TOKEN or BRAIN_REPO secret is not set, so the Brain cannot be read. Nothing was changed."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check out the profile
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ env.BASE_BRANCH }}
+
+      - name: Set up Python
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: Test the generator
+        if: steps.gate.outputs.run == 'true'
+        run: python -m unittest discover -s tests
+
+      - name: List the whitelisted Brain files
+        if: steps.gate.outputs.run == 'true'
+        id: sources
+        run: |
+          {
+            echo "paths<<SOURCES_EOF"
+            python scripts/sync_from_brain.py --list-sources
+            echo "SOURCES_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Check out the whitelisted Brain files
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/checkout@v7
+        with:
+          repository: ${{ secrets.BRAIN_REPO }}
+          token: ${{ secrets.BRAIN_READ_TOKEN }}
+          path: ${{ env.BRAIN_DIR }}
+          persist-credentials: false
+          sparse-checkout: ${{ steps.sources.outputs.paths }}
+          sparse-checkout-cone-mode: false
+          show-progress: false
+
+      - name: Sync README.md
+        if: steps.gate.outputs.run == 'true'
+        id: sync
+        run: |
+          python scripts/sync_from_brain.py "$BRAIN_DIR" | tee "$RUNNER_TEMP/sync-report.txt"
+          echo "brain_sha=$(git -C "$BRAIN_DIR" rev-parse --short=12 HEAD)" >> "$GITHUB_OUTPUT"
+          if git diff --quiet -- README.md; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Profile in sync::README.md already matches the Brain."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open or update the pull request
+        if: steps.sync.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRAIN_SHA: ${{ steps.sync.outputs.brain_sha }}
+        run: |
+          number=$(gh pr list --head "$SYNC_BRANCH" --base "$BASE_BRANCH" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$number" ] && git fetch --quiet origin "$SYNC_BRANCH" && git diff --quiet FETCH_HEAD -- README.md; then
+            echo "::notice title=Pull request unchanged::#$number already carries this README."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898575+github-actions[bot]@users.noreply.github.com"
+          git switch --quiet --force-create "$SYNC_BRANCH"
+          git add README.md
+          git commit --quiet --message "Sync the profile README from the Brain" --message "Brain commit: $BRAIN_SHA"
+          git push --quiet --force origin "$SYNC_BRANCH"
+
+          body="$RUNNER_TEMP/pr-body.md"
+          {
+            echo "Weekly sync of the README sections that come from the Brain (Brain commit \`$BRAIN_SHA\`)."
+            echo "Only the text between \`brain:<section>\` markers changed."
+            echo
+            echo '```'
+            cat "$RUNNER_TEMP/sync-report.txt"
+            echo '```'
+            echo
+            echo "This pull request is already public; merging it puts the text on the profile."
+            echo "To change the wording, edit the block in the Brain and the next run will refresh this pull request."
+          } > "$body"
+
+          if [ -n "$number" ]; then
+            gh pr edit "$number" --body-file "$body"
+            echo "::notice title=Pull request updated::#$number now matches Brain commit $BRAIN_SHA."
+          else
+            url=$(gh pr create --base "$BASE_BRANCH" --head "$SYNC_BRANCH" --title "Sync the profile README from the Brain" --body-file "$body")
+            echo "::notice title=Pull request opened::$url"
+          fi

@@ -1,3 +1,4 @@
+<!-- Text between brain:<section>:start and brain:<section>:end markers is generated from the Brain by scripts/sync_from_brain.py. Edit it there, not here. -->
 <h1 align="center">Valentín Torassa Colombero</h1>
 
 <p align="center">
@@ -16,6 +17,7 @@ I write long-form technical notes at **[vtsecurity.com.ar](https://vtsecurity.co
 
 ## Current role & focus
 
+<!-- brain:role:start -->
 ### Teramot - Cybersecurity Engineer & Software Architect
 
 *Nov. 2025-present*
@@ -29,9 +31,11 @@ I write long-form technical notes at **[vtsecurity.com.ar](https://vtsecurity.co
 **Current focus:** AI-agent authorization, MCP security, detection engineering, cloud identity, and low-level Linux fundamentals.
 
 Previously, I worked as a Cybersecurity & Compliance Analyst at Teramot, a Cybersecurity Analyst at Consulting IT, and a Teaching Assistant for Computer Architecture II at Universidad Abierta Interamericana.
+<!-- brain:role:end -->
 
 ## Projects & open source
 
+<!-- brain:projects:start -->
 - **[Open Security Labs](https://github.com/ValentinTorassa/Open-Security-Labs)** - My flagship open-source education project: practical Spanish-language labs covering Linux, networking, backend engineering, cloud, DevSecOps, AI agents, and cybersecurity. **[Explore the platform →](https://securitylabs.valentorassa.com/)**
 - **[VT-SecretShare](https://github.com/ValentinTorassa/VT-SecretShare)** - Self-hosted, one-time secret sharing with browser-side AES-256-GCM encryption, a Go API, and atomic deletion through Redis GETDEL.
 - **[VT-Agent-Firewall](https://github.com/ValentinTorassa/VT-Agent-Firewall)** - A local security gateway between an AI agent and its tools (filesystem, shell, network, MCP): default-deny policy engine, human approval, and an append-only audit log, tested against indirect prompt injection. It is a security lab, not a production sandbox: it enforces policy around the tool call, not at the operating-system boundary.
@@ -41,6 +45,7 @@ Previously, I worked as a Cybersecurity & Compliance Analyst at Teramot, a Cyber
 - **[VT-Security-Fixes](https://github.com/ValentinTorassa/VT-Security-Fixes)** - DEP-3-formatted security patches for open-source packages that miss standard distribution updates, currently focused on Ubuntu universe CVEs.
 - **[VT-Terminal-Project](https://github.com/ValentinTorassa/VT-Terminal-Project)** - A reproducible macOS and Linux terminal environment with Zsh, Ghostty, modern CLI tools, searchable cheatsheets, and AI-assisted workflows.
 - **[VT-IDE-Project](https://github.com/ValentinTorassa/VT-IDE-Project)** - An AI-native Zed setup with MCP integrations, inline assistance, and structured Git review, conflict-resolution, and diff workflows.
+<!-- brain:projects:end -->
 
 ### Contribution highlight
 
@@ -112,6 +117,7 @@ These are the technologies I use across secure backend systems, cloud infrastruc
 
 ## Education & certifications
 
+<!-- brain:education:start -->
 - **Information Systems Engineering**, Universidad Abierta Interamericana - final year, expected Dec. 2026
 - **Information Systems Analyst**, Universidad Abierta Interamericana - completed Dec. 2024, GPA 9.25/10
 - **Teaching module for university teaching assistants**, Universidad Abierta Interamericana - module certificate, 2026
@@ -119,13 +125,17 @@ These are the technologies I use across secure backend systems, cloud infrastruc
 - **AWS Certified Cloud Practitioner (CLF-C02)** - issued Jul. 2025, valid through Jul. 2028
 - **Linux Foundation Certified IT Associate (LFCA)** - issued Apr. 2026, valid through Apr. 2028
 - **Huawei Certified ICT Associate, Datacom (HCIA-Datacom)**
+<!-- brain:education:end -->
 
 ## Teaching, speaking & research
 
 [VT Security](https://www.youtube.com/@vtcibersecurity) is my Spanish-language education and community platform for practical cybersecurity, Linux, networking, software engineering, and systems fundamentals. Open Security Labs is its flagship public software project.
 
+<!-- brain:community:start -->
 I am an **AWS Community Builder**, in my first year in the programme.
+<!-- brain:community:end -->
 
+<!-- brain:talks:start -->
 ### Upcoming
 
 - **Joven Argentina (FNGA), Rosario, Sep. 28, 2026:** cybersecurity talk and exchange for a programme of young leaders
@@ -145,6 +155,7 @@ I am an **AWS Community Builder**, in my first year in the programme.
 - **JAIIO 2024:** co-author of [research on monoliths and microservices](https://revistas.unlp.edu.ar/JAIIO/article/view/17984)
 - **WICC 2025:** *Dockerización de servidores SCADA: ciberseguridad industrial*
 - **WICC 2024:** *Seguridad en redes wifi: estrategias de detección y expulsión de intrusos*
+<!-- brain:talks:end -->
 
 <h2 align="center">Find me online</h2>
 
