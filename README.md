@@ -141,8 +141,8 @@ I am an **AWS Community Builder**, in my first year in the programme.
 - **Joven Argentina (FNGA), Rosario, Sep. 28, 2026:** cybersecurity talk and exchange for a programme of young leaders
 - **Hacking Day 2026, Paraná, Oct. 2, 2026:** *Firewall para agentes de IA: prompt injection en vivo* (main stage, 45 min)
 - **CACIC 2026, UTN FRCU, Concepción del Uruguay, Oct. 5-9, 2026:** author and presenter of two accepted papers, on Podman/FOSS contribution and on Ubuntu universe SRU work
-- **Ekoparty 2026, Buenos Aires, Oct. 7-9, 2026:** two talks, *Prompt injection en agentes con tools* at the AI Resilience Hub Village and *GitOps: cuando la fuente de verdad también es el riesgo* at the DevSecOps Space Village
-- **JCC XXIV 2026, FCEIA, UNR, Oct. 21-23, 2026:** invited 45-minute talk on systems, Linux, cloud and AI security
+- **Ekoparty 2026, Buenos Aires, Oct. 7-9, 2026:** five talks: *Prompt injection en agentes con tools* (AI Resilience Hub), *Dónde se rompe OAuth cuando el que llama es un agente* (OWASP Village), *Cuando el webhook llega dos veces* (CyberFinance), *Logs bajo fuego* (BlueSpace) and *GitOps: cuando la fuente de verdad también es el riesgo* (DevSecOps Space)
+- **JCC XXIV 2026, FCEIA, UNR, Oct. 21, 2026:** invited 45-minute talk, *El problema no es el prompt: seguridad real en aplicaciones con IA*
 
 ### Past talks and research
 
