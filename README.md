@@ -138,7 +138,6 @@ I am an **AWS Community Builder**, in my first year in the programme.
 <!-- brain:talks:start -->
 ### Upcoming
 
-- **Joven Argentina (FNGA), Rosario, Sep. 28, 2026:** cybersecurity talk and exchange for a programme of young leaders
 - **Hacking Day 2026, Paraná, Oct. 2, 2026:** *Firewall para agentes de IA: prompt injection en vivo* (main stage, 45 min)
 - **CACIC 2026, UTN FRCU, Concepción del Uruguay, Oct. 5-9, 2026:** author and presenter of two accepted papers, on Podman/FOSS contribution and on Ubuntu universe SRU work
 - **Ekoparty 2026, Buenos Aires, Oct. 7-9, 2026:** five talks: *Prompt injection en agentes con tools* (AI Resilience Hub), *Dónde se rompe OAuth cuando el que llama es un agente* (OWASP Village), *Cuando el webhook llega dos veces* (CyberFinance), *Logs bajo fuego* (BlueSpace) and *GitOps: cuando la fuente de verdad también es el riesgo* (DevSecOps Space)
@@ -146,6 +145,8 @@ I am an **AWS Community Builder**, in my first year in the programme.
 
 ### Past talks and research
 
+- **Joven Argentina (FNGA), Rosario, Sep. 28, 2026:** cybersecurity talk and exchange for a programme of young leaders
+- **UAI Rosario, guest lecture, Sep. 25, 2026:** *Sistemas operativos Linux*
 - **[DebConf26](https://debconf26.debconf.org/talks/75-abstraction-leaks-why-understanding-linux-internals-still-matters/), July 24, 2026:** *Abstraction Leaks: Why Understanding Linux Internals Still Matters*
 - **Webinar UAI, Tecnología Informática, Aug. 19, 2026:** *Orquestación, workers y arquitectura moderna: cómo diseñar sistemas que escalan*
 - **[Vincular Inteligente 2026](https://vincular-inteligente-2026.vercel.app/), May 22, 2026:** *Seguridad con IA: monitoreo inteligente y respuesta temprana*
