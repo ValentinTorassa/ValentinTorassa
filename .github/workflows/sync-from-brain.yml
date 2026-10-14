@@ -8,6 +8,9 @@
 # README changes, it opens (or refreshes) a pull request from the brain-sync
 # branch. Only the whitelisted Brain files are checked out, and the logs show
 # section names, file paths and the source commit, never Brain text.
+# The run fails (after the pull request step) when a talk is still under
+# "Upcoming" after its last day in Argentina: move it to the past list in the
+# Brain and the next run is green.
 name: Sync from the Brain
 
 on:
@@ -29,6 +32,10 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+    defaults:
+      run:
+        # bash -eo pipefail, so a failing sync is not hidden by `| tee`.
+        shell: bash
     env:
       BASE_BRANCH: main
       SYNC_BRANCH: brain-sync
@@ -137,3 +144,9 @@ jobs:
             url=$(gh pr create --base "$BASE_BRANCH" --head "$SYNC_BRANCH" --title "Sync the profile README from the Brain" --body-file "$body")
             echo "::notice title=Pull request opened::$url"
           fi
+
+      - name: Fail if a past talk is still under Upcoming
+        if: steps.gate.outputs.run == 'true'
+        # README.md was just synced, so --check can only fail here on a talk
+        # whose last day has passed in Argentina.
+        run: python scripts/sync_from_brain.py "$BRAIN_DIR" --check

@@ -379,6 +379,81 @@ class StaleTalkTest(unittest.TestCase):
         self.assertEqual(sync.stale_upcoming(self.TALKS, dt.date(2026, 9, 23)), [])
 
 
+class PastTalkCheckTest(TempRepo):
+    """A talk left under "Upcoming" after its last day fails --check, not the sync itself."""
+
+    def setUp(self) -> None:
+        super().setUp()
+        self.assertEqual(self.sync()[0], 0)  # README now matches the Brain; ConfA is on Oct. 2, 2026.
+
+    def check(self, today: str) -> tuple[int, str, str]:
+        return run(str(self.brain), "--readme", str(self.readme), "--today", today, "--check")
+
+    def test_check_fails_the_day_after_the_talk(self) -> None:
+        before = self.readme.read_bytes()
+        code, out, err = self.check("2026-10-03")
+        self.assertEqual(code, 1)
+        self.assertIn("error: talks: upcoming item 1 ended on 2026-10-02", err)
+        self.assertIn("1 past talk(s) still under Upcoming", err)
+        self.assertIn("in sync with the Brain", out)
+        self.assertNotIn("ConfA", out + err)
+        self.assertEqual(self.readme.read_bytes(), before)
+
+    def test_check_passes_on_the_last_day(self) -> None:
+        code, out, err = self.check("2026-10-02")
+        self.assertEqual(code, 0, err)
+        self.assertNotIn("upcoming item", err)
+
+    def test_out_of_date_and_past_talk_are_both_reported(self) -> None:
+        self.readme.write_bytes(readme_text({**PUBLIC, "talks": "stale talks"}).encode("utf-8"))
+        code, _, err = self.check("2026-10-03")
+        self.assertEqual(code, 1)
+        self.assertIn("out of date", err)
+        self.assertIn("upcoming item 1 ended", err)
+
+    def test_sync_still_writes_and_only_warns(self) -> None:
+        self.readme.write_bytes(readme_text().encode("utf-8"))
+        code, out, err = self.sync("--today", "2026-10-03")
+        self.assertEqual(code, 0, err)
+        self.assertIn("warning: talks: upcoming item 1 ended on 2026-10-02", err)
+        self.assertIn(PUBLIC["talks"], self.readme.read_text(encoding="utf-8"))
+
+    def test_annotations_in_github_actions(self) -> None:
+        out, err = io.StringIO(), io.StringIO()
+        args = [str(self.brain), "--readme", str(self.readme), "--today", "2026-10-03", "--check"]
+        with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err), mock.patch.dict(os.environ, {"GITHUB_ACTIONS": "true"}):
+            self.assertEqual(sync.main(args), 1)
+        self.assertIn("::error title=Brain sync::talks: upcoming item 1 ended", err.getvalue())
+
+    def test_default_date_is_argentine(self) -> None:
+        with mock.patch.object(sync, "today_in_argentina", return_value=dt.date(2026, 10, 3)):
+            code, _, err = run(str(self.brain), "--readme", str(self.readme), "--check")
+        self.assertEqual(code, 1)
+        self.assertIn("ended on 2026-10-02", err)
+        with mock.patch.object(sync, "today_in_argentina", return_value=dt.date(2026, 10, 2)):
+            self.assertEqual(run(str(self.brain), "--readme", str(self.readme), "--check")[0], 0)
+
+    def test_argentine_date_from_a_utc_clock(self) -> None:
+        utc = dt.timezone.utc
+        # 02:59 UTC on Oct. 3 is still Oct. 2 in Rosario; 03:00 UTC is Oct. 3.
+        self.assertEqual(sync.today_in_argentina(dt.datetime(2026, 10, 3, 2, 59, tzinfo=utc)), dt.date(2026, 10, 2))
+        self.assertEqual(sync.today_in_argentina(dt.datetime(2026, 10, 3, 3, 0, tzinfo=utc)), dt.date(2026, 10, 3))
+
+
+class WorkflowTest(unittest.TestCase):
+    """The weekly run must surface sync errors and past talks instead of staying green."""
+
+    def setUp(self) -> None:
+        self.text = (ROOT / ".github" / "workflows" / "sync-from-brain.yml").read_text(encoding="utf-8")
+
+    def test_steps_run_with_pipefail(self) -> None:
+        self.assertRegex(self.text, r"defaults:\n\s+run:\n(?:\s+#.*\n)?\s+shell: bash\n")
+
+    def test_last_step_checks_for_past_talks(self) -> None:
+        last_step = self.text.rsplit("- name:", 1)[1]
+        self.assertIn('sync_from_brain.py "$BRAIN_DIR" --check', last_step)
+
+
 class RepositoryReadmeTest(unittest.TestCase):
     """Checks on the real README.md, which the workflow also runs."""
 

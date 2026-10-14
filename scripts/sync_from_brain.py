@@ -26,9 +26,13 @@ Usage:
     sync_from_brain.py BRAIN_DIR [--readme PATH] [--check] [--today YYYY-MM-DD]
     sync_from_brain.py --list-sources
 
+A talk still listed under "Upcoming" after its last day, counted in Argentina
+time (UTC-3), is only a warning when the README is written, so the other
+sections still sync; with --check it fails the run.
+
 Exit status: 0 when the README is in sync or was updated, 1 when --check finds
-it out of date, 2 on any error (missing block or marker, failed check, bad path).
-Standard library only.
+it out of date or finds a past talk under "Upcoming", 2 on any error (missing
+block or marker, failed check, bad path). Standard library only.
 """
 
 from __future__ import annotations
@@ -104,6 +108,9 @@ NUMBER_RULES: list[tuple[str, re.Pattern[str]]] = [
     ("long-number", re.compile(r"\d{8,}")),
     ("phone-number", re.compile(r"\+\d{1,3}[\s().-]*\d(?:[\s().-]*\d){6,}")),
 ]
+
+# Talk dates are Argentine dates; the runner's clock is UTC.
+ART = dt.timezone(dt.timedelta(hours=-3), "ART")
 
 MONTHS = {m: i for i, m in enumerate(("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"), 1)}
 TALK_DATE = re.compile(
@@ -287,8 +294,13 @@ def render(readme: str, blocks: dict[str, str]) -> tuple[str, list[str]]:
     return "\n".join(out), [section for section in SOURCES if section in changed]
 
 
+def today_in_argentina(now: dt.datetime | None = None) -> dt.date:
+    """The current date in Argentina (UTC-3, no daylight saving time)."""
+    return (now or dt.datetime.now(dt.timezone.utc)).astimezone(ART).date()
+
+
 def stale_upcoming(talks: str, today: dt.date) -> list[str]:
-    """Warn about talks still listed under "Upcoming" whose last day has passed."""
+    """Talks still listed under "Upcoming" whose last day is before `today`."""
     warnings: list[str] = []
     in_upcoming = False
     item = 0
@@ -314,8 +326,9 @@ def stale_upcoming(talks: str, today: dt.date) -> list[str]:
     return warnings
 
 
-def _emit_warning(message: str) -> None:
-    prefix = "::warning title=Brain sync::" if os.environ.get("GITHUB_ACTIONS") == "true" else "warning: "
+def _emit(level: str, message: str) -> None:
+    """Print a warning or an error, as a workflow annotation when running in GitHub Actions."""
+    prefix = f"::{level} title=Brain sync::" if os.environ.get("GITHUB_ACTIONS") == "true" else f"{level}: "
     print(prefix + message, file=sys.stderr)
 
 
@@ -323,8 +336,14 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Sync the Brain-owned sections of README.md.")
     parser.add_argument("brain_dir", nargs="?", type=Path, help="path to a checkout of the Brain")
     parser.add_argument("--readme", type=Path, default=DEFAULT_README, help="README to update (default: the repo README)")
-    parser.add_argument("--check", action="store_true", help="exit 1 if the README would change; write nothing")
-    parser.add_argument("--today", type=dt.date.fromisoformat, help="date for the stale-talk warning (default: today)")
+    parser.add_argument(
+        "--check", action="store_true",
+        help="exit 1 if the README would change or a past talk is still under Upcoming; write nothing",
+    )
+    parser.add_argument(
+        "--today", type=dt.date.fromisoformat,
+        help="date for the past-talk check (default: today in Argentina, UTC-3)",
+    )
     parser.add_argument("--list-sources", action="store_true", help="print the whitelisted Brain files and exit")
     args = parser.parse_args(argv)
 
@@ -348,20 +367,26 @@ def main(argv: list[str] | None = None) -> int:
         print(f"error: {error}", file=sys.stderr)
         return 2
 
-    if "talks" in blocks:
-        warnings += stale_upcoming(blocks["talks"], args.today or dt.date.today())
+    stale = stale_upcoming(blocks["talks"], args.today or today_in_argentina()) if "talks" in blocks else []
     for message in warnings:
-        _emit_warning(message)
+        _emit("warning", message)
+    for message in stale:
+        _emit("error" if args.check else "warning", message)
 
     verb = "would update" if args.check else "updated"
     for section in SOURCES:
         print(f"{section}: {verb if section in changed else 'in sync'} ({SOURCES[section]})")
+    if args.check:
+        if changed:
+            print("README.md is out of date; run without --check to update it.", file=sys.stderr)
+        else:
+            print("README.md is in sync with the Brain.")
+        if stale:
+            print(f"{len(stale)} past talk(s) still under Upcoming; move them to the past list in the Brain.", file=sys.stderr)
+        return 1 if changed or stale else 0
     if not changed:
         print("README.md is in sync with the Brain.")
         return 0
-    if args.check:
-        print("README.md is out of date; run without --check to update it.", file=sys.stderr)
-        return 1
     args.readme.write_bytes(updated.encode("utf-8"))
     print(f"README.md updated: {', '.join(changed)}.")
     return 0
