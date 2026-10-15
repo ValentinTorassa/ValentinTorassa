@@ -43,8 +43,7 @@ Previously, I worked as a Cybersecurity & Compliance Analyst at Teramot, a Cyber
 - **[VT-Lens](https://github.com/ValentinTorassa/VT-Lens)** - A native Rust GUI for understanding local process and network activity, turning a selected slice of evidence into an LLM-ready prompt or Markdown export. It reads `/proc` without root and is an educational instrument, not an EDR or a packet sniffer.
 - **[VT-Ragnaros](https://github.com/ValentinTorassa/VT-Ragnaros)** - A reverse-engineered, from-scratch Linux driver and daemon for the Ragnaros USB control deck: libusb transport, 10 LCD keys, 4 rotary knobs, a touch strip, and YAML profiles. It runs entirely in user space; there is no kernel module.
 - **[VT-Security-Fixes](https://github.com/ValentinTorassa/VT-Security-Fixes)** - DEP-3-formatted security patches for open-source packages that miss standard distribution updates, currently focused on Ubuntu universe CVEs.
-- **[VT-Terminal-Project](https://github.com/ValentinTorassa/VT-Terminal-Project)** - A reproducible macOS and Linux terminal environment with Zsh, Ghostty, modern CLI tools, searchable cheatsheets, and AI-assisted workflows.
-- **[VT-IDE-Project](https://github.com/ValentinTorassa/VT-IDE-Project)** - An AI-native Zed setup with MCP integrations, inline assistance, and structured Git review, conflict-resolution, and diff workflows.
+- **[VT-Terminal-Project](https://github.com/ValentinTorassa/VT-Terminal-Project)** - A reproducible macOS and Linux terminal environment with Zsh, Ghostty, modern CLI tools, searchable cheatsheets, and AI-assisted workflows. Its [`ide/`](https://github.com/ValentinTorassa/VT-Terminal-Project/tree/main/ide) folder holds an AI-native Zed setup with MCP integrations, inline assistance, and structured Git review, conflict-resolution, and diff workflows.
 <!-- brain:projects:end -->
 
 ### Contribution highlight
@@ -138,12 +137,12 @@ I am an **AWS Community Builder**, in my first year in the programme.
 <!-- brain:talks:start -->
 ### Upcoming
 
-- **CACIC 2026, UTN FRCU, Concepción del Uruguay, Oct. 5-9, 2026:** author and presenter of two accepted papers, on Podman/FOSS contribution and on Ubuntu universe SRU work
-- **Ekoparty 2026, Buenos Aires, Oct. 7-9, 2026:** five talks: *Prompt injection en agentes con tools* (AI Resilience Hub), *Dónde se rompe OAuth cuando el que llama es un agente* (OWASP Village), *Cuando el webhook llega dos veces* (CyberFinance), *Logs bajo fuego* (BlueSpace) and *GitOps: cuando la fuente de verdad también es el riesgo* (DevSecOps Space)
 - **JCC XXIV 2026, FCEIA, UNR, Oct. 21, 2026:** invited 45-minute talk, *El problema no es el prompt: seguridad real en aplicaciones con IA*
 
 ### Past talks and research
 
+- **Ekoparty 2026, Buenos Aires, Oct. 7-9, 2026:** five talks: *Prompt injection en agentes con tools* (AI Resilience Hub), *Dónde se rompe OAuth cuando el que llama es un agente* (OWASP Village), *Cuando el webhook llega dos veces* (CyberFinance), *Logs bajo fuego* (BlueSpace) and *GitOps: cuando la fuente de verdad también es el riesgo* (DevSecOps Space)
+- **CACIC 2026, UTN FRCU, Oct. 6, 2026:** presented two accepted papers virtually, on Podman/FOSS contribution and on Ubuntu universe SRU work
 - **Hacking Day 2026, Paraná, Oct. 2, 2026:** *Firewall para agentes de IA: prompt injection en vivo* (main stage, 45 min)
 - **Joven Argentina (FNGA), Rosario, Sep. 28, 2026:** cybersecurity talk and exchange for a programme of young leaders
 - **UAI Rosario, guest lecture, Sep. 25, 2026:** *Sistemas operativos Linux*
