@@ -13,7 +13,7 @@ I am a Cybersecurity and Backend Engineer based in Rosario, Argentina. I build a
 
 Alongside my professional work, I create open-source software and practical Spanish-language education through [VT Security](https://www.youtube.com/@vtcibersecurity).
 
-I write long-form technical notes at **[vtsecurity.com.ar](https://vtsecurity.com.ar)** - Linux, Git and security, with the diagrams and the exact commands I actually use. I care about work that leaves reviewable evidence: running code, labs, documentation, tests, research, and talks.
+I write long-form technical notes at **[vtsecurity.com.ar](https://vtsecurity.com.ar)** - Linux, Git and security, with the diagrams and the exact commands I actually use. I care about work that leaves reviewable evidence: running code, [labs](https://securitylabs.valentorassa.com/), documentation, tests, research, and [talks](https://valentorassa.com/charlas).
 
 ## Current role & focus
 
@@ -37,7 +37,8 @@ Previously, I worked as a Cybersecurity & Compliance Analyst at Teramot, a Cyber
 
 <!-- brain:projects:start -->
 - **[Open Security Labs](https://github.com/ValentinTorassa/Open-Security-Labs)** - My flagship open-source education project: practical Spanish-language labs covering Linux, networking, backend engineering, cloud, DevSecOps, AI agents, and cybersecurity. **[Explore the platform →](https://securitylabs.valentorassa.com/)**
-- **[VT-SecretShare](https://github.com/ValentinTorassa/VT-SecretShare)** - Self-hosted, one-time secret sharing with browser-side AES-256-GCM encryption, a Go API, and atomic deletion through Redis GETDEL.
+- **[VT-SecretShare](https://github.com/ValentinTorassa/VT-SecretShare)** - Self-hosted, one-time secret sharing with browser-side AES-256-GCM encryption, a Go API, and an atomic burn-after-read in Redis (a single Lua check-and-delete script). **[Try it →](https://secretshare.valentorassa.com/?lang=en)**
+- **[AutoConfine](https://github.com/ValentinTorassa/AutoConfine)** - Builds least-privilege seccomp profiles for OCI containers from what the container actually does: an eBPF probe records every syscall from the entrypoint's `execve` on, and AutoConfine turns that trace into a profile that allows only those. Ships as a CLI (`go install`) and a GitHub Action.
 - **[VT-Agent-Firewall](https://github.com/ValentinTorassa/VT-Agent-Firewall)** - A local security gateway between an AI agent and its tools (filesystem, shell, network, MCP): default-deny policy engine, human approval, and an append-only audit log, tested against indirect prompt injection. It is a security lab, not a production sandbox: it enforces policy around the tool call, not at the operating-system boundary.
 - **[pluma](https://github.com/ValentinTorassa/pluma)** - The open-source blog platform behind vtsecurity.com.ar and yaninacolombero.com: per-tenant contracts, isolated deployments, content sanitization, and per-instance validation. Tenant selection happens at build time, so each site ships as its own deployment.
 - **[VT-Lens](https://github.com/ValentinTorassa/VT-Lens)** - A native Rust GUI for understanding local process and network activity, turning a selected slice of evidence into an LLM-ready prompt or Markdown export. It reads `/proc` without root and is an educational instrument, not an EDR or a packet sniffer.
