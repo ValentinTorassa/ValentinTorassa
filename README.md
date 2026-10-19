@@ -131,6 +131,8 @@ These are the technologies I use across secure backend systems, cloud infrastruc
 
 [VT Security](https://www.youtube.com/@vtcibersecurity) is my Spanish-language education and community platform for practical cybersecurity, Linux, networking, software engineering, and systems fundamentals. Open Security Labs is its flagship public software project.
 
+I am writing my first book, ***No podés defender lo que no entendés*** (in Spanish): a path into cybersecurity that starts by understanding Linux, from the command line down to the kernel and up through containers, the cloud and AI agents, with Open Security Labs labs for its chapters. **[Join the waitlist →](https://vtsecurity.com.ar/libro?ref=github)**
+
 <!-- brain:community:start -->
 I am an **AWS Community Builder**, in my first year in the programme.
 <!-- brain:community:end -->
