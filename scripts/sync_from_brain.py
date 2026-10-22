@@ -83,7 +83,6 @@ URL = re.compile(r"\b[a-zA-Z][a-zA-Z0-9+.-]*://[^\s<>()\[\]\"'`]+")
 LINK_TARGET = re.compile(r"\]\(\s*<?([^)\s>]+)|\b(?:href|src)\s*=\s*[\"']([^\"']*)[\"']", re.I)
 PRIVATE_SUFFIXES = (".local", ".lan", ".home", ".internal", ".intranet", ".corp", ".home.arpa", ".ts.net")
 TEXT_RULES: list[tuple[str, re.Pattern[str]]] = [
-    ("html-comment", re.compile(r"<!--|-->")),
     ("local-path", re.compile(r"(?<![\w.-])(?:/home/|/Users/|/root/|/private/|/var/folders/|/mnt/|/media/|~/)|\b[A-Za-z]:\\")),
     ("email-address", re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}")),
     (
@@ -205,6 +204,10 @@ def privacy_violations(text: str) -> list[tuple[int, str]]:
     """(line number within the block, rule) for every privacy hit."""
     hits: set[tuple[int, str]] = set()
     for number, line in enumerate(text.split("\n"), 1):
+        # Reject delimiters instead of trying to strip or parse HTML.
+        # HTML accepts --!> as well as --> as an end delimiter.
+        if any(delimiter in line for delimiter in ("<!--", "-->", "--!>")):
+            hits.add((number, "html-comment"))
         for rule, pattern in TEXT_RULES:
             if pattern.search(line):
                 hits.add((number, rule))

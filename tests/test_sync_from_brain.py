@@ -187,6 +187,8 @@ class PrivacyGuardTest(TempRepo):
             "relative-link": "[plan](../audits/2026-09-17-career-plan/README.md)",
             "html-href": '<a href="/private/notes">notes</a>',
             "html-comment": "<!-- hidden from the rendered page -->",
+            "html-comment-alternate-end": "hidden --!> visible",
+            "html-comment-end": "hidden --> visible",
             "phone": "+54 9 341 555-1234",
             "id-number": "DNI 12345678",
             "do-not-publish": "No publicar hasta que confirmen",
