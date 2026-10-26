@@ -15,6 +15,8 @@ Alongside my professional work, I create open-source software and practical Span
 
 I write long-form technical notes at **[vtsecurity.com.ar](https://vtsecurity.com.ar)** - Linux, Git and security, with the diagrams and the exact commands I actually use. I care about work that leaves reviewable evidence: running code, [labs](https://securitylabs.valentorassa.com/), documentation, tests, research, and [talks](https://valentorassa.com/charlas).
 
+I am writing **[No podés defender lo que no entendés](https://valentorassa.com/libro)**, a book in preparation about Linux, systems, and security. The outline and waitlist are available on its page. **[Apuntes](https://vtsecurity.com.ar/apuntes)** is my fortnightly newsletter, and my research publications are collected on **[ORCID](https://orcid.org/0009-0005-7980-4128)**.
+
 ## Current role & focus
 
 <!-- brain:role:start -->
@@ -141,10 +143,11 @@ I am an **AWS Community Builder**, in my first year in the programme.
 <!-- brain:talks:start -->
 ### Upcoming
 
-- **JCC XXIV 2026, FCEIA, UNR, Oct. 21, 2026:** invited 45-minute talk, *El problema no es el prompt: seguridad real en aplicaciones con IA*
+- **[ROS:SEC 2026, OWASP Rosario](https://rosariosecurity.com/), Nov. 6, 2026:** confirmed talk, *Dónde se rompe OAuth cuando el que llama es un agente*. Speaking time to be announced.
 
 ### Past talks and research
 
+- **[JCC XXIV 2026, FCEIA, UNR](https://valentorassa.com/charlas/jcc-2026), Oct. 21, 2026:** invited talk, *El problema no es el prompt: seguridad real en aplicaciones con IA*. [Slides](https://valentorassa.com/charlas/jcc-2026/slides).
 - **Ekoparty 2026, Buenos Aires, Oct. 7-9, 2026:** five talks: *Prompt injection en agentes con tools* (AI Resilience Hub), *Dónde se rompe OAuth cuando el que llama es un agente* (OWASP Village), *Cuando el webhook llega dos veces* (CyberFinance), *Logs bajo fuego* (BlueSpace) and *GitOps: cuando la fuente de verdad también es el riesgo* (DevSecOps Space)
 - **CACIC 2026, UTN FRCU, Oct. 6, 2026:** presented two accepted papers virtually, on Podman/FOSS contribution and on Ubuntu universe SRU work
 - **Hacking Day 2026, Paraná, Oct. 2, 2026:** *Firewall para agentes de IA: prompt injection en vivo* (main stage, 45 min)
