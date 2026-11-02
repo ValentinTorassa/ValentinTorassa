@@ -143,7 +143,7 @@ I am an **AWS Community Builder**, in my first year in the programme.
 <!-- brain:talks:start -->
 ### Upcoming
 
-- **[ROS:SEC 2026, OWASP Rosario](https://rosariosecurity.com/), Nov. 6, 2026:** confirmed talk, *Dónde se rompe OAuth cuando el que llama es un agente*. Speaking time to be announced.
+- **[ROS:SEC 2026, OWASP Rosario](https://rosariosecurity.com/), Nov. 6, 2026:** confirmed talk, *Dónde se rompe OAuth cuando llama un agente*. Friday at 14:50 (UTC-3).
 
 ### Past talks and research
 
