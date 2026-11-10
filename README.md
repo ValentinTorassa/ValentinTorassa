@@ -141,12 +141,9 @@ I am an **AWS Community Builder**, in my first year in the programme.
 <!-- brain:community:end -->
 
 <!-- brain:talks:start -->
-### Upcoming
-
-- **[ROS:SEC 2026, OWASP Rosario](https://rosariosecurity.com/), Nov. 6, 2026:** confirmed talk, *Dónde se rompe OAuth cuando llama un agente*. Friday at 14:50 (UTC-3).
-
 ### Past talks and research
 
+- **[ROS:SEC 2026, OWASP Rosario](https://valentorassa.com/charlas/rossec-2026), Nov. 6, 2026:** talk, *Dónde se rompe OAuth cuando llama un agente*. [Slides](https://valentorassa.com/charlas/rossec-2026/slides).
 - **[JCC XXIV 2026, FCEIA, UNR](https://valentorassa.com/charlas/jcc-2026), Oct. 21, 2026:** invited talk, *El problema no es el prompt: seguridad real en aplicaciones con IA*. [Slides](https://valentorassa.com/charlas/jcc-2026/slides).
 - **Ekoparty 2026, Buenos Aires, Oct. 7-9, 2026:** five talks: *Prompt injection en agentes con tools* (AI Resilience Hub), *Dónde se rompe OAuth cuando el que llama es un agente* (OWASP Village), *Cuando el webhook llega dos veces* (CyberFinance), *Logs bajo fuego* (BlueSpace) and *GitOps: cuando la fuente de verdad también es el riesgo* (DevSecOps Space)
 - **CACIC 2026, UTN FRCU, Oct. 6, 2026:** presented two accepted papers virtually, on Podman/FOSS contribution and on Ubuntu universe SRU work
