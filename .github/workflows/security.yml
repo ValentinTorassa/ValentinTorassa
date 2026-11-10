@@ -7,6 +7,13 @@ on:
   push:
     branches: [main]
   pull_request:
+    # The weekly Brain sync opens its pull request as github-actions[bot],
+    # which GitHub treats as a first-time contributor: the run waits for an
+    # approval nobody gives and fails with zero jobs when the PR is merged.
+    # A Markdown-only change has nothing for CodeQL to analyze, so it starts
+    # no run; the push to main after the merge still scans as usual.
+    paths-ignore:
+      - "**.md"
   schedule:
     # Mondays 06:00 UTC
     - cron: "0 6 * * 1"
