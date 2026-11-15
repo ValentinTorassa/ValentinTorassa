@@ -38,6 +38,7 @@ Previously, I worked as a Cybersecurity & Compliance Analyst at Teramot, a Cyber
 ## Projects & open source
 
 <!-- brain:projects:start -->
+- **[blackice](https://github.com/ValentinTorassa/blackice)** - A headless macOS application firewall operated through a CLI, built with Esteban Suárez. A Network Extension content filter holds every connection no rule covers until you or an AI agent (fx, Claude Code, Codex, or opencode) approves or denies it, and every change needs Touch ID. Developer ID signed and notarized, shipped as a Homebrew cask and an install script that pins the zip's SHA-256. **[Read the docs →](https://blackice-macos.vercel.app/)**
 - **[Open Security Labs](https://github.com/ValentinTorassa/Open-Security-Labs)** - My flagship open-source education project: practical Spanish-language labs covering Linux, networking, backend engineering, cloud, DevSecOps, AI agents, and cybersecurity. **[Explore the platform →](https://securitylabs.valentorassa.com/)**
 - **[VT-SecretShare](https://github.com/ValentinTorassa/VT-SecretShare)** - Self-hosted, one-time secret sharing with browser-side AES-256-GCM encryption, a Go API, and an atomic burn-after-read in Redis (a single Lua check-and-delete script). **[Try it →](https://secretshare.valentorassa.com/?lang=en)**
 - **[homelab-blueprint](https://github.com/ValentinTorassa/homelab-blueprint)** - How I run a single-server homelab like a small production system, as a sanitized, runnable blueprint: Gatus probes and a heartbeat for every scheduled job, a weekly test that restores every backup into a throwaway scratch, a nightly drift check of installed files against git by blob SHA, and a cold standby in AWS with a guarded, rehearsed takeover.
@@ -154,6 +155,8 @@ I am an **AWS Community Builder**, in my first year in the programme.
 - **[DebConf26](https://debconf26.debconf.org/talks/75-abstraction-leaks-why-understanding-linux-internals-still-matters/), July 24, 2026:** *Abstraction Leaks: Why Understanding Linux Internals Still Matters*
 - **[Vincular Inteligente 2026](https://vincular-inteligente-2026.vercel.app/), May 22, 2026:** *Seguridad con IA: monitoreo inteligente y respuesta temprana*
 - **CyberSecTuc Meetup #3, May 2026:** *La realidad de un Ingeniero en Ciberseguridad*
+- **WICC 2026:** [*Go como lenguaje de diseño: reducción de complejidad accidental en sistemas concurrentes*](https://sedici.unlp.edu.ar/handle/10915/195946)
+- **CACIC 2025:** [*Uso ético de los agentes de inteligencia artificial en el ámbito de la investigación académica*](https://sedici.unlp.edu.ar/handle/10915/191296)
 - **CACIC 2024:** *Expositor Distinguido en Seguridad Informática* for [reverse-shell research](https://sedici.unlp.edu.ar/handle/10915/176994)
 - **SACS / 53 JAIIO 2024:** *Mejor Exposición* for [botnet taxonomy research](https://revistas.unlp.edu.ar/JAIIO/article/view/17896)
 - **JAIIO 2024:** co-author of [research on monoliths and microservices](https://revistas.unlp.edu.ar/JAIIO/article/view/17984)
